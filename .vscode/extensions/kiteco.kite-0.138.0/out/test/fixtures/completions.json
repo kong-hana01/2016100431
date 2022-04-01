@@ -1,0 +1,49 @@
+{
+  "offset_encoding": "utf-32",
+
+  "completions": [
+    {
+      "snippet": {
+        "text": "dumps",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 17,
+        "end": 18
+      },
+      "display": "json.dumps",
+
+      "web_id": "json.dumps",
+      "local_id": "python;;;;json.dumps",
+
+      "hint": "function",
+      "documentation": {
+        "text": "..."
+      },
+      "smart": false,
+
+      "children": [
+        {
+          "snippet": {
+            "text": "dumps(「obj」)",
+            "placeholders": [{
+              "begin": 6,
+              "end": 11
+            }]
+          },
+          "replace": {
+            "begin": 17,
+            "end": 18
+          },
+          "display": "json.dumps(「obj」)",
+
+          "hint": "function",
+          "documentation": {
+            "text": "..."
+          },
+          "smart": true
+        }
+      ]
+    }
+  ]
+}

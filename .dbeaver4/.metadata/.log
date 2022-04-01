@@ -1,0 +1,116 @@
+!SESSION 2020-09-12 10:47:08.917 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_77
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2020-09-12 10:47:22.078
+!MESSAGE Project 'General' not found in registry
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2020-09-12 10:52:18.335
+!MESSAGE Datasource user 'org.jkiss.dbeaver.ui.editors.sql.SQLEditor@3fa57aa8' already registered in datasource 'Oracle - XE'
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2020-09-12 10:57:01.155
+!MESSAGE SQL Error [900] [42000]: ORA-00900: invalid SQL statement
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2020-09-12 10:57:01.156
+!MESSAGE ORA-00900: invalid SQL statement
+
+!STACK 0
+java.sql.SQLException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1039)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3608)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3709)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1090)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCPreparedStatementImpl.execute(JDBCPreparedStatementImpl.java:260)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCPreparedStatementImpl.executeStatement(JDBCPreparedStatementImpl.java:204)
+	at org.jkiss.dbeaver.ext.snowflake.views.SnowflakeConnectionPage.loadDictList(SnowflakeConnectionPage.java:302)
+	at org.jkiss.dbeaver.ext.snowflake.views.SnowflakeConnectionPage.testConnection(SnowflakeConnectionPage.java:289)
+	at org.jkiss.dbeaver.ui.dialogs.connection.ConnectionPageSettings.testConnection(ConnectionPageSettings.java:371)
+	at org.jkiss.dbeaver.ui.dialogs.connection.ConnectionWizard$ConnectionTester.testInPage(ConnectionWizard.java:313)
+	at org.jkiss.dbeaver.ui.dialogs.connection.ConnectionWizard$ConnectionTester.run(ConnectionWizard.java:295)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:101)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2020-09-12 11:07:25.982
+!MESSAGE SQL Error [901] [42000]: ORA-00901: invalid CREATE command
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2020-09-12 11:07:25.982
+!MESSAGE ORA-00901: invalid CREATE command
+
+!STACK 0
+java.sql.SQLException: ORA-00901: invalid CREATE command
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:195)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1029)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1916)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1878)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:318)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:137)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:458)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:402)
+	at org.jkiss.dbeaver.model.DBUtils.tryExecuteRecover(DBUtils.java:1627)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:400)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:835)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:2588)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:101)
+	at org.jkiss.dbeaver.model.DBUtils.tryExecuteRecover(DBUtils.java:1627)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:99)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:101)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2020-09-12 11:07:32.948
+!MESSAGE SQL Error [907] [42000]: ORA-00907: missing right parenthesis
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2020-09-12 11:07:32.948
+!MESSAGE ORA-00907: missing right parenthesis
+
+!STACK 0
+java.sql.SQLException: ORA-00907: missing right parenthesis
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:195)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1029)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1916)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1878)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:318)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:137)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:458)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:402)
+	at org.jkiss.dbeaver.model.DBUtils.tryExecuteRecover(DBUtils.java:1627)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:400)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:835)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:2588)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:101)
+	at org.jkiss.dbeaver.model.DBUtils.tryExecuteRecover(DBUtils.java:1627)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:99)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:101)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2020-09-12 11:18:55.784
+!MESSAGE Some data source listeners are still registered: [org.jkiss.dbeaver.ui.editors.sql.SQLEditor@3fa57aa8]
